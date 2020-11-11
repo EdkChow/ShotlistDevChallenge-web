@@ -30,11 +30,11 @@ You will be given a ReactJS project generated with **create-react-app** using **
 
 We are giving you three primary tasks:
 1. Create a progress bar for the top of the page as shown here:
-   ![Progress Bar screen shot]()
+   ![Progress Bar screen shot](https://i.imgur.com/U3hVImR.png)
    
 2. Add a responsive breakpoint for mobile devices that hides the sidebar image on each page (shown below)
-   ![Breakpoint gif]()
+   ![Breakpoint gif](https://media3.giphy.com/media/5jG9e0EGGQE1gcvZsP/giphy.gif)
    
 3. Create an append-only list for adding team emails on the final onboarding page:
 
-   ![Team invites]()
+   ![Team invites](https://i.imgur.com/YNUykAv.png)
