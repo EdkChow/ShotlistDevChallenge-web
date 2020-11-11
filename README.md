@@ -14,7 +14,7 @@ Working with an existing code base, you will be extending some basic functionali
 
 1. Run `git clone https://github.com/dyashy/ShotlistDevChallenge-web`
 2. Modify the code locally
-3. Create a pull request with your code when ready to submit
+3. Send a link to your github fork to hiring@creativesoftwares.io
 
 ## Time
 
