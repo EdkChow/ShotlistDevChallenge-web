@@ -2,6 +2,7 @@ import React from 'react';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
+import ProgressBar from './ProgressBar';
 
 const useStyles = makeStyles((theme) => ({
   headerText: {
@@ -14,25 +15,32 @@ const useStyles = makeStyles((theme) => ({
   backBtn: {
     color: "rgb(175,175,175)",
     fontSize: "16px",
+  },
+  title: {
+    textAlign: "center",
   }
 }));
 
 
-export default function OnboardingHeader(props) {
+export default function OnboardingHeader({ onboardingState, backAction, title }) {
   const classes = useStyles();
   
   return (
-    <Grid container spacing={3}>
-      <Grid item lg={4}>
-        <Button className={classes.backBtn} onClick={props.backAction}>
+    <Grid container spacing={3} alignItems={'center'}>
+      <Grid item xs={4} lg={4}>
+        <Button className={classes.backBtn} onClick={backAction}>
           {"< Back"}
         </Button>        
       </Grid>
-      <Grid item lg={8}>
-        Progress Bar...
+      <Grid item xs={4} lg={4}>
+        <ProgressBar
+          color='#FFA500'
+          onboardingState={onboardingState}
+          numOnboardingPages={3}
+        />
       </Grid>
-      <Grid item lg={12}>
-        <h3>{props.title}</h3>
+      <Grid item xs={12} lg={12}>
+        <h3 className={classes.title}>{title}</h3>
       </Grid>      
     </Grid>
   );
