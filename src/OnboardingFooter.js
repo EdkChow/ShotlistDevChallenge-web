@@ -21,7 +21,10 @@ const useStyles = makeStyles((theme) => ({
   laterBtn: {
     color: "rgb(31,31,31)",
     fontSize: "16px"
-  }
+  },
+  gridContainer: {
+    marginTop: "40px",
+  },
 }));
 
 
@@ -29,8 +32,8 @@ export default function OnboardingFooter(props) {
   const classes = useStyles();
   
   return (
-    <Grid container spacing={3}>
-      <Grid item lg={6}>
+    <Grid container spacing={3} className={classes.gridContainer}>
+      <Grid item xs={5}>
         <Button 
           className={classes.laterBtn} 
           onClick={props.laterAction}
@@ -38,7 +41,7 @@ export default function OnboardingFooter(props) {
           {"Finish Later"}
         </Button>        
       </Grid>
-      <Grid item lg={6}>
+      <Grid item xs={7}>
         <Button
           className={classes.nextBtn}
           onClick={props.nextAction}
